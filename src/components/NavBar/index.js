@@ -1,5 +1,6 @@
 import "./bootstrap.min.css"
 import CartWidget from "../CartWidget"
+import { NavLink } from "react-router-dom"
 
 export const NavBar = () => {
         return (
@@ -10,33 +11,24 @@ export const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse " id="navbarTogglerDemo01">
 
-        <a className="navbar-brand" href="#">T&T</a>
+        <NavLink className="navbar-brand" to="/">T&T</NavLink>
 
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 
-            <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-            </li>
+            <li className="nav-link categories">
+                Categories
 
-            <li className="nav-item">
-                <a className="nav-link" href="#">Shop</a>
-            </li>
-
-            <li className="nav-item">
-                <li className="nav-link categories"><a className="nav-link" href="#">Categories</a> 
-
-                    <ul id="menu">
-                        <li><a className="nav-link" href="#">GPUs</a></li>
-                        <li><a className="nav-link" href="#">CPUs</a></li>
-                    </ul>
+                    <div id="menu">
+                        <NavLink className="nav-link" to={`/category/grafica` }>GPUs</NavLink>
+                        <NavLink className="nav-link" to={`/category/procesador` }>CPUs</NavLink>
+                    </div>
                 
-                </li>
             </li>
             
             <li className="nav-item">
-                <a className="nav-link">
+                <NavLink className="nav-link">
                     <CartWidget/>
-                </a>
+                </NavLink>
             </li>
 
         </ul>
