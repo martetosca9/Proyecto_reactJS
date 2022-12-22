@@ -12,6 +12,7 @@
 import { useParams } from "react-router-dom";
 import products from "../../products.json";
 import Button from 'react-bootstrap/Button';
+import ItemQuantitySelector from "../ItemDetail";
 
 export const ItemDetailContainer = () => {
     const {prodID} = useParams();
@@ -26,6 +27,7 @@ export const ItemDetailContainer = () => {
                 <h2>Name: {product?.serie}</h2>
                 <p>Details: {product?.fabricante} | {product?.modelo}</p>
                 <p>Price: AR${product?.precio}</p>
+                <ItemQuantitySelector product={product}></ItemQuantitySelector>
                 <Button variant="primary">Add to cart</Button>
 
             </div>

@@ -1,6 +1,7 @@
-import "./bootstrap.min.css"
+import "../../bootstrap/bootstrap.min.css"
 import CartWidget from "../CartWidget"
 import { NavLink } from "react-router-dom"
+
 
 export const NavBar = () => {
         return (
@@ -26,19 +27,14 @@ export const NavBar = () => {
             </li>
             
             <li className="nav-item">
-                <NavLink className="nav-link">
+                <NavLink to={'/Cart'} className="nav-link">
                     <CartWidget/>
                 </NavLink>
             </li>
 
         </ul>
         
-        
 
-        <form className="form-inline my-2 my-lg-0">
-        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
     </nav>
             </header>

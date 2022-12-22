@@ -91,3 +91,86 @@ code {
   height: 500px;
   width: 500px;
 }
+
+.cartContainer {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+
+  padding: 25px;
+
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 15px;
+}
+
+.checkout {
+  background-color: #eeffee;
+  padding: 10px;
+}
+
+.btn-hover.color-5 {
+  background-image: linear-gradient(to right, #a3fca3, #b9f6b9, #97ff97, #b9f6b9);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.cartContainer img {
+  width: 35vh;
+  height: auto;
+}
+
+.paynowContainer {
+  padding: 10px;
+}
+
+.payStyle {
+  background-color: #eeffee;
+  padding: 30px;
+  border-style: outset;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.payStyle input {
+  margin: 5px;
+  border-style: outset;
+  border-radius: 5px;
+}
+
+.thanks {
+  margin-top: 20vh;
+}
