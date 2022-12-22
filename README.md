@@ -4,7 +4,7 @@
 
 Link de repositorio de github del proyecto (https://github.com/martetosca9/Proyecto_reactJS.git)
 
-El proyecto está formado por 11 components:
+El proyecto está formado por 10 components:
 -CartWidget
 -Cart
 -CartProduct
@@ -16,4 +16,4 @@ El proyecto está formado por 11 components:
 -Navbar
 -ProdItem
 -SearchBar
--CartContext
+

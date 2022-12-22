@@ -1,13 +1,4 @@
-// "id": 0,
-//       "fabricante": "Grafica Nvidia",
-//       "modelo": "Ventus",
-//       "stock": 4,
-//       "serie": "GTX 1650",
-//       "memoria": "4GB de vram",
-//       "precio": 68000,
-//       "img": "img/gtx1650.jpg",
-//       "cantidad": 1,
-//       "categoria": "grafica"
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
